@@ -1,0 +1,38 @@
+<!Doctype html>
+<html ng-app="exercise_part_b">
+	<head>
+		<title>My First Angular App (Ofir-Aghai)</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section ng-controller="functrions">
+			<h2 class="bg-warning centerText">{{ofiraghai}}</h2>
+			<br><br>
+
+			<h2 class="bg-success">{{titleResult1}} (out):</h2>
+			<section id='function1'>{{result1}}</section>
+			<br><br>
+			
+			<h2 class="bg-success">{{titleResult2}} (out):
+				<button type="button" ng-click="function2()">execute {{titleResult2}}</button>
+			</h2>
+			<section id='function2'>{{result2}}</section>
+			<br>
+			
+			<h2 class="bg-success">{{titleResult3}} (out):
+				<button type="button" ng-click="function3()">execute {{titleResult3}}</button>
+			</h2>
+			<section id='function3'>{{result3}}</section>
+			<br>
+
+			<h2 class="bg-success">{{titleResult4}} (out):
+				<button type="button" ng-click="function4()">execute {{titleResult4}}</button>
+			</h2>
+			<section id='function4'>{{result4}}</section>
+		</section>
+		
+	</body>
+	<script src="js/lib/angular/angular.min.js"></script>
+	<script src="js/first.js"></script>
+</html>
